@@ -2,15 +2,9 @@ package main
 
 func main() {
 
-	//slice
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
+	cards := newDeck()
 
 	//iterate over slice and print
 	cards.print()
 
-}
-
-func newCard() string {
-	return "Five of Diamonds"
 }
