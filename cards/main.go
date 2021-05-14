@@ -4,9 +4,16 @@ import "fmt"
 
 func main() {
 
-	card := newCard()
+	//slice
+	cards := []string{"Ace of Diamonds", newCard()}
+	cards = append(cards, "Six of Spades")
 
-	fmt.Println(card)
+	//iterate over slice and print
+
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+	fmt.Println(cards)
 }
 
 func newCard() string {
