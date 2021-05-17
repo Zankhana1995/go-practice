@@ -1,16 +1,22 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	cards := newDeck()
 
-	//iterate over slice and print
-	//cards.print()
+	// iterate over slice and print
+	// cards.print()
 
-	hand, remainingDeck := deal(cards, 5)
+	// hand, remainingDeck := deal(cards, 5)
 
-	hand.print()
+	// hand.print()
 
-	remainingDeck.print()
+	// remainingDeck.print()
+
+	fmt.Println(cards.toString())
+
+	cards.saveToFile("my_cards")
 
 }
