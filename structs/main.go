@@ -32,8 +32,11 @@ func main() {
 	// give me the memory address the variable (jim) pointing at
 	// jim is a refrence to the struct in memory, the actual value of the struct
 	// &jim as a whole is memory address or a pointer which we are assigning to jimPointer
-	jimPointer := &jim
-	jimPointer.updateName("Jimmy")
+	// jimPointer := &jim
+	// jimPointer.updateName("Jimmy")
+
+	// However, the above code of pointer can become a shortcut by below code,
+	jim.updateName("Jimmy")
 	jim.print()
 
 }
